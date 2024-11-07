@@ -1,8 +1,8 @@
 # Flare
 
-![](https://github.com/melhosseiny/sourdough/blob/3d0a00c0de64b37cd2de4f72311e3ea4a348bb80/repo.png)
+![](https://github.com/melhosseiny/flare/blob/772d63f73ceb8db0fd53c4de3e229b4bef860076/repo.png)
 
-[![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https://raw.githubusercontent.com/melhosseiny/sourdough/main/sourdough.js)
+[![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https://raw.githubusercontent.com/melhosseiny/flare/main/flare.js)
 
 ## Guide
 
@@ -12,7 +12,7 @@
 
 `components/hello_world.js`
 
-    import { html, state, web_component, define_component } from "sourdough";
+    import { html, state, web_component, define_component } from "flare";
 
     const template = (data) => html`
       <p>Hello, World!</p>
@@ -56,7 +56,7 @@
         <script type="importmap">
           {
             "imports": {
-              "sourdough": "https://busy-dog-44.deno.dev/melhosseiny/sourdough/main/sourdough.js"
+              "sourdough": "https://busy-dog-44.deno.dev/melhosseiny/flare/main/flare.js"
             }
           }
         </script>
@@ -64,7 +64,7 @@
       <body>
         <hello-world></hello-world>
         <script type="module">
-          import { hello_world } from "./components/hello_world.js";
+          import { hello_world } from "/components/hello_world.js";
         </script>
       </body>
     </html>
